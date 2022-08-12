@@ -34,7 +34,7 @@ nav {
 .sean-wallace {
   font-family:'Times New Roman', Times, serif;
   font-size: 200%;
-  color: var(--white-bondi-cloud);
+  color: var(--blue-bondi-ocean);
   text-decoration: none;
   text-align: left;
   display: inline;
@@ -42,7 +42,7 @@ nav {
 
 nav a {
   color: var(--white-bondi-cloud);
-  padding: 10px;
+  padding: 10px 20px;
   text-decoration: none;
   line-height: 37px;
 }
@@ -90,102 +90,117 @@ header {
   color: var(--crimson-liquids-contrast);
 }
 
-
 /* NAV HEADER HERO END */
 
 /* FFFFFFFLLLEEEEXXXXXX START */
+
 main {
-  /* background-image: linear-gradient(to bottom red, yellow); */
-  background-color: var(--white-bondi-cloud);
-}
-
-.flexbox-container {
-  /* height: 300px; */
-  /* background-color: orange; */
-  /* background-image: linear-gradient(to bottom var(--blue-bondi-ocean), var(--white-bondi-cloud)); */
-
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-around; */
-  /* align-items: stretch; */
-  /* align-content: space-around; */
+  /* display: flex; */
   /* flex-wrap: wrap; */
 }
 
-.flexbox-item {
-  margin: 10px;
-  min-height: 100px;
+.container {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.flexbox-item h3 {
-  padding: 10px;
-  margin: 10px;
+section article img {
+  height: 100px;
   width: 100px;
-  text-align: right;
-  border-right: 2px solid var(--blue-bondi-ocean);
 }
 
-.flexbox-item p {
-  padding: 10px;
-  margin: 10px;
-  text-align: left;
+.item {
+  height: 100px;
+  width: 100px; /* A fixed width as the default */
+  border: 1px solid blueviolet;
 }
 
-/* PROJECT CARDS START */
+.item-center { 
+  flex-grow: 1; /* Set the middle element to grow and stretch */
+  border: 1px solid blueviolet;
+}
+.item + .item { 
+  margin-left: 2%; 
+}
 
-#article-project-work {
-  margin: 10px;
-  min-height: 100px;
+
+.box4container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.projects {
+.box4item {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
+  border: 1px solid peru;
+}
+
+.box4item:nth-child(3n-2) {
+  width: 100%;
+  border: 1px solid peru;
+}
+/* FFFFFFFLLLEEEEXXXXXX END */
+
+
+
+
+
+aside {
+  flex: 1;
+  background-color: var(--blue-bondi-sky);
+  padding: 80px;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--blue-bondi-ocean);
+}
+
+/* 
+What does the justify-content property do?
+It is used to align the flex items; in our case, the product cards 
+*/
+.products {
   flex: 4;
+  background-color: #fff;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.section-project-card {
-  border-color: var(--blue-bondi-sky);
+/* 
+What is the flex property a shorthand property for?
+It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+What is it doing here?
+We are making the product card not growable, not shrinkable, and with an initial length of 400px 
+*/
+.card {
+  border-color: var(--crimson-liquids-contrast);
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
   padding: 10px;
-  flex: 1 1 40px;
+  flex: 0 0 400px;
 }
 
-.section-project-card header {
-  color: var(--white-bondi-cloud);
+.card header {
   padding: 20px;
 }
 
-.section-project-card p {
+.card p {
   text-align: center;
 }
 
-.section-project-card img {
+.card img {
   /* width: 100%; */
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 200px;
 }
-
-#first-project img {
-  width: 300px;
-  height: 300px;
-}
-/* PROJECT CARDS END */
-
-
-/* FOOTER */
-footer {
-  padding: 20px;
-  text-align: center;
-  background: var(--white-bondi-cloud);
-}
-
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
