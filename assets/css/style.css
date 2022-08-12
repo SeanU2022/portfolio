@@ -1,0 +1,208 @@
+:root {
+  --blue-bondi-ocean: rgba(67, 93, 137, 1);
+  --blue-bondi-sky: rgba(83, 133, 197, 1);
+  --blue-bondi-sky-edge: rgba(63, 106, 176, 1);
+  --white-bondi-cloud: rgba(225, 226, 224, 1);
+  --crimson-liquids-contrast: rgba(212, 109, 106, 1);
+}
+
+* {
+  box-sizing: border-box;
+  /*  */
+  color: var(--white-bondi-cloud);
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* NAV HEADER HERO START */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--blue-bondi-sky);
+}
+
+.sw-logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 37px;
+    height: 37px;
+
+}
+
+.sean-wallace {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 200%;
+  color: var(--blue-bondi-ocean);
+  text-decoration: none;
+  text-align: left;
+}
+
+nav a {
+  color: var(--white-bondi-cloud);
+  padding: 10px 20px;
+  text-decoration: none;
+  line-height: 37px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  background: var(--blue-bondi-sky);
+}
+
+.hero-container {
+  position: relative;
+  text-align: center;
+}
+
+.hero-img {
+  height: 50vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+/* Centered text */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 200%;
+  color: var(--blue-bondi-ocean);
+}
+
+.hero-text p {
+  font-size: 150%;
+  color: var(--blue-bondi-ocean);
+}
+
+.hero-text p strong {
+  color: var(--crimson-liquids-contrast);
+}
+
+/* NAV HEADER HERO END */
+
+/* FFFFFFFLLLEEEEXXXXXX START */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  height: 100px;
+  width: 100px; /* A fixed width as the default */
+  border: 1px solid blueviolet;
+}
+
+.item-center { 
+  flex-grow: 1; /* Set the middle element to grow and stretch */
+  border: 1px solid blueviolet;
+}
+.item + .item { 
+  margin-left: 2%; 
+}
+
+
+.box4container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box4item {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
+  border: 1px solid peru;
+}
+
+.box4item:nth-child(3n-2) {
+  width: 100%;
+  border: 1px solid peru;
+}
+/* FFFFFFFLLLEEEEXXXXXX END */
+
+
+
+
+
+aside {
+  flex: 1;
+  background-color: var(--blue-bondi-sky);
+  padding: 80px;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--blue-bondi-ocean);
+}
+
+/* 
+What does the justify-content property do?
+It is used to align the flex items; in our case, the product cards 
+*/
+.products {
+  flex: 4;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 
+What is the flex property a shorthand property for?
+It is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties 
+What is it doing here?
+We are making the product card not growable, not shrinkable, and with an initial length of 400px 
+*/
+.card {
+  border-color: var(--crimson-liquids-contrast);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 0 400px;
+}
+
+.card header {
+  padding: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  /* width: 100%; */
+  width: 400px;
+  height: 200px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+  .sean-wallace{
+    text-align: center;
+  }
+}
