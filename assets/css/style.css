@@ -3,6 +3,9 @@
   --blue-bondi-sky: rgba(83, 133, 197, 1);
   --blue-bondi-sky-edge: rgba(63, 106, 176, 1);
   --white-bondi-cloud: rgba(225, 226, 224, 1);
+  --sand-tama-light: rgba(210, 193, 170, 1);
+  --sand-tama-heavy: rgba(194, 179, 160, 1);
+  --blue-tama-ocean: rgba(59, 108, 129, 1);
   --crimson-liquids-contrast: rgba(212, 109, 106, 1);
 }
 
@@ -76,17 +79,17 @@ header {
 }
 
 .hero-text h2 {
-  font-size: 200%;
+  font-size: 400%;
   color: var(--blue-bondi-ocean);
 }
 
-.hero-text p {
+#hero-blurb {
+  text-align: center;
   font-size: 150%;
-  color: var(--blue-bondi-ocean);
-}
-
-.hero-text p strong {
-  color: var(--crimson-liquids-contrast);
+  color: var(--white-bondi-cloud);
+  position: relative;
+  top: 100px;
+  /* bottom: -150px; */
 }
 
 /* NAV HEADER HERO END */
@@ -108,8 +111,8 @@ main {
 }
 
 .flexbox-item h3 {
-  flex-grow: 0;
-  flex-shrink: 0;
+  flex-grow: 0;       /* do not grow */
+  flex-shrink: 0;       /* do not shrink */
   flex-basis: 100px;
   padding: 10px;
   margin: 10px;
@@ -146,26 +149,40 @@ main {
   border-width: 1px;
   border-radius: 10px;
   padding: 10px;
-  flex: 1 1 40px;
+  flex: 1 1 auto;       /* grow shrink*/
 }
 
 .section-project-card header {
   color: var(--white-bondi-cloud);
-  padding: 20px;
+  padding: 10px;
 }
 
 .section-project-card p {
+  padding: 0;
+  margin: 0;
   text-align: center;
+  font-size: x-small;
+}
+
+.section-project-card a {
+  font-size: x-small;
 }
 
 .section-project-card img {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+  /* flex-basis: 100px; */
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 #first-project img {
-  width: 300px;
-  height: 300px;
+  /* flex: 1 1 300px; */
+  justify-content: space-around;
+  /* align-items: stretch; */
+  /* width: 100%;
+  height: 100%; */
+  object-fit: fill;
 }
 /* PROJECT CARDS END */
 
@@ -175,15 +192,19 @@ main {
 footer {
   padding: 20px;
   text-align: center;
-  background: var(--white-bondi-cloud);
+  /* background: var(--white-bondi-cloud); */
+  background: var(--sand-tama-heavy);
 }
 
 
 /* RESPONSIVE */
 /* Tablets */
 @media screen and (max-width: 992px) {
+  .hero-text h2 {
+    font-size: 300%;
+  }
   footer {
-    background: yellowgreen;
+    background: var(--sand-tama-heavy);
   }
 }
 
@@ -200,7 +221,7 @@ footer {
 
 /* Small smartphones */
 @media screen and (max-width: 576px) {
-  footer {
-    background: orange;
-  }
+  /* footer {
+    background: var(--sand-tama-heavy);
+  } */
 }
