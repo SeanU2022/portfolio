@@ -1,25 +1,32 @@
-# Portfolio
-
-## Introduction
+# Sean Wallace Portfolio
+-----
+![image](https://img.shields.io/badge/License-MIT-yellow.svg)
+## Description
 This portfolio showcases the skills and talents I have for a role in website development. It demonstrates abilities with Front End design and coding in HTML, CSS, and Javascript. In addition, as a Full stack developer, you will see the use of Frameworks, Database, and related technologies.  I have deployed several projects using GitHub with live links in the portfolio.
 
-The core skills I have include: flexbox, media queries, and CSS variables.
+The core skills I have include: HTML/CSS (flex, bootstrap, tailwind), Javascript client (including JQuery), NodeJS (OOP/async/JSON), experience with Browser/3rd party (domain, openweathermap, ...)/Custom Server side API's, REST routing, framework libraries (moment.js, fontawesome, inquirer, chalk, fs, express, bcrypt, sequalize, mysql2), tools (TDD using jest, insomnia, RapidAPI, postman), SQL, ORM, ... , and of course GitHub.
 
 **Note:** You will see some application links use placeholder images and names which will change over time as future projects get added to the portfolio.
 
+## Table of Contents
 
-## User Story
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Mock-Up](#mock-up)
+- [Licence](#licence)
+- [Repository Information](#repository-information)
+- [Enquiries](#enquiries)
+
+-----
+## User-Story
 
 ```
 AS AN employer
 I WANT to view a potential employee's deployed portfolio of work samples
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 ```
+## Acceptance-Criteria
 
-
-## Acceptance Criteria
-
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
 
 ```
 GIVEN I need to sample a potential employee's previous work
@@ -36,46 +43,28 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+-----
 
-## Grading Requirements
+## Mock-Up
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the above acceptance criteria.
+![HTML webpage titled “Portfolio” features sections with links to websites built.](Sean-Wallace-Portfolio.png)
 
-### Deployment: 32%
+## Licence
 
-* Application deployed at live URL.
+MIT
 
-* Application loads with no errors.
+![image](https://img.shields.io/badge/License-MIT-yellow.svg) An explanation of the licence is here: https://opensource.org/licenses/MIT
 
-* Application GitHub URL submitted.
 
-* GitHub repository contains application code.
+-----
 
-### Application Quality: 15%
+## Repository-Information
+https://github.com/SeanU2022/portfolio
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
 
-### Repository Quality: 13%
+## Enquiries
 
-* Repository has a unique name.
+You can find out more at my GitHub account: <https://github.com/SeanU2022>
 
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme with description, screenshot, link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository that contains your code. Give the repository a unique name and include a README file that describes the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+Please send any more questions you may have to: <sean.wallace.australia@gmail.com>
