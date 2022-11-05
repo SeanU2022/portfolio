@@ -59,6 +59,9 @@ MIT
 
 -----
 
+## Deployment
+https://seanu2022.github.io/portfolio/
+
 ## Repository-Information
 https://github.com/SeanU2022/portfolio
 
